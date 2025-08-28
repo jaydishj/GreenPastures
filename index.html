@@ -1,59 +1,22 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenPastures | AI in Plant Biology</title>
-  
-  <!-- Link external CSS -->
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Quick embedded styles -->
   <style>
-    /* Intro animation overlay */
-    #intro-animation {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;  /* change to transparent if you want */
-      z-index: 9999;
-    }
-
+    /* Quick embedded styles (can be moved to style.css) */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f5fff5;
       color: #333;
     }
-  </style>
-</head>
-<body>
-  
-  <!-- Intro Animation -->
-  <div id="intro-animation"></div>
 
-  <!-- Your main content (do NOT touch) -->
-  <h1>Welcome to GreenPastures</h1>
-  <p>AI in Plant Biology</p>
-
-  <script>
-    var animation = lottie.loadAnimation({
-      container: document.getElementById('intro-animation'),
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'leaf_to_flower.json' // replace with your animation file
-    });
-
-    animation.addEventListener('complete', function() {
-      document.getElementById('intro-animation').style.display = "none";
-    });
-  </script>
-</body>
-</html>
     header {
       display: flex;
       align-items: center;
@@ -62,9 +25,11 @@
       background: linear-gradient(90deg, #2e7d32, #66bb6a);
       color: #fff;
     }
+
     header img {
       height: 60px;
     }
+
     header h1 {
       margin: 0;
       font-size: 28px;
@@ -73,15 +38,18 @@
       align-items: center;
       gap: 10px;
     }
+
     nav a {
       margin: 0 12px;
       color: white;
       text-decoration: none;
       font-weight: 500;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .hero {
       display: flex;
       align-items: center;
@@ -92,16 +60,19 @@
       color: white;
       position: relative;
     }
+
     .hero::before {
       content: "";
       position: absolute;
       inset: 0;
       background: rgba(0,0,0,0.5);
     }
+
     .hero-content {
       position: relative;
       z-index: 1;
     }
+
     .btn {
       display: inline-block;
       margin-top: 15px;
@@ -113,18 +84,22 @@
       font-weight: 600;
       transition: 0.3s;
     }
+
     .btn:hover {
       background: #388e3c;
     }
+
     section {
       padding: 50px 20px;
     }
+
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
+
     .card {
       background: #fff;
       padding: 20px;
@@ -132,12 +107,14 @@
       box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
       text-align: center;
     }
+
     footer {
       background: #2e7d32;
       color: white;
       text-align: center;
       padding: 30px 10px;
     }
+
     footer a {
       color: #a5d6a7;
       text-decoration: none;
@@ -146,11 +123,10 @@
 </head>
 <body>
 
-  <!-- Header with logo -->
+  <!-- Header with Logo -->
   <header>
     <h1>
-      <img src="logo.png" alt="My Logo" class="logo">
-      GreenPastures
+      <img src="logo.png" alt="GreenPastures Logo" class="logo"> GreenPastures
     </h1>
     <nav>
       <a href="#home">Home</a>
@@ -173,9 +149,9 @@
   <section id="about">
     <h2>About GreenPastures</h2>
     <p style="text-align:center; max-width:800px; margin:auto; color:#444;">
-      GreenPastures is an AI-powered initiative focusing on solving real agricultural challenges 
-      by integrating plant biology and machine learning. From crop health detection 
-      to pesticide classification, our platform bridges technology and sustainability.
+      GreenPastures is an AI-powered initiative focusing on solving real agricultural challenges
+      by integrating plant biology and machine learning. From crop health detection to pesticide
+      classification, our platform bridges technology and sustainability.
     </p>
   </section>
 
@@ -219,7 +195,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
