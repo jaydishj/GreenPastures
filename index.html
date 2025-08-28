@@ -1,19 +1,59 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenPastures | AI in Plant Biology</title>
+  
   <!-- Link external CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Quick embedded styles -->
   <style>
-    /* Quick embedded styles (you can move to style.css) */
+    /* Intro animation overlay */
+    #intro-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;  /* change to transparent if you want */
+      z-index: 9999;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f5fff5;
       color: #333;
     }
+  </style>
+</head>
+<body>
+  
+  <!-- Intro Animation -->
+  <div id="intro-animation"></div>
+
+  <!-- Your main content (do NOT touch) -->
+  <h1>Welcome to GreenPastures</h1>
+  <p>AI in Plant Biology</p>
+
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('intro-animation'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'leaf_to_flower.json' // replace with your animation file
+    });
+
+    animation.addEventListener('complete', function() {
+      document.getElementById('intro-animation').style.display = "none";
+    });
+  </script>
+</body>
+</html>
     header {
       display: flex;
       align-items: center;
@@ -179,6 +219,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
