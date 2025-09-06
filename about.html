@@ -5,9 +5,22 @@
   <meta charset="UTF-8">
   <title>About - AI Plant Biology</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,   // Animation speed (ms)
+        once: true,       // Run animation only once
+        offset: 100       // Trigger offset
+      });
+    });
+  </script>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <h1><img src="images/logo.png" alt="Logo"> AI + Plant Biology</h1>
     <nav>
       <a href="main.html">Home</a>
@@ -20,19 +33,22 @@
   </header>
 
   <section>
-    <h2>About Us</h2>
-    <p>
-      We are a research-driven initiative integrating **Artificial Intelligence with Plant Biology** 
-      to solve real-world challenges in agriculture, biotechnology, and environmental sustainability.  
+    <h2 data-aos="fade-up">About Us</h2>
+    <p data-aos="fade-right">
+      We are a research-driven initiative integrating 
+      <b>Artificial Intelligence with Plant Biology</b> 
+      to solve real-world challenges in agriculture, biotechnology, and environmental sustainability.
     </p>
-    <p>
-      Our work focuses on building AI-powered systems for **disease detection, precision farming, 
-      pesticide safety, soil health monitoring, genetic engineering (CRISPR), and aquatic resource management**.
+    <p data-aos="fade-left">
+      Our work focuses on building AI-powered systems for 
+      <b>disease detection, precision farming, pesticide safety, soil health monitoring, 
+      genetic engineering (CRISPR), and aquatic resource management</b>.
     </p>
   </section>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 AI + Plant Biology | All rights reserved.</p>
   </footer>
 </body>
 </html>
+
