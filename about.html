@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - AI Plant Biology</title>
   <link rel="stylesheet" href="style.css">
 
   <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init({
-        duration: 1000,   // Animation speed (ms)
-        once: true,       // Run animation only once
-        offset: 100       // Trigger offset
-      });
-    });
-  </script>
 </head>
 <body>
+
+  <!-- Header Section -->
   <header data-aos="fade-down">
-    <h1><img src="images/logo.png" alt="Logo"> AI + Plant Biology</h1>
-    <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="AI + Plant Biology Logo" width="120" height="auto">
+      <h1>AI + Plant Biology</h1>
+    </div>
+    <nav aria-label="Main navigation">
       <a href="main.html">Home</a>
       <a href="completed.html">Completed Projects</a>
       <a href="ongoing.html">Ongoing Projects</a>
@@ -31,7 +27,8 @@
     </nav>
   </header>
 
-  <section>
+  <!-- About Section -->
+  <section class="about">
     <h2 data-aos="fade-up">About Us</h2>
     <p data-aos="fade-right">
       We are a research-driven initiative integrating 
@@ -45,8 +42,22 @@
     </p>
   </section>
 
+  <!-- Footer Section -->
   <footer data-aos="fade-up">
     <p>&copy; 2025 AI + Plant Biology | All rights reserved.</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    });
+  </script>
+
 </body>
 </html>
