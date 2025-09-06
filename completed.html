@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <title>Completed Projects</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    });
+  </script>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <h1>Completed Projects</h1>
     <nav>
       <a href="main.html">Home</a>
@@ -19,13 +32,34 @@
   </header>
 
   <section id="projects">
-    <h2>Completed Projects</h2>
-    <ul>
-      <li>🌱 Platify</li>
-      <li>🧪 Pesticide Detection</li>
-      <li>🌿 Plant Disease Detection</li>
-      <li>🐟 FishSnap</li>
-    </ul>
+    <h2 data-aos="fade-up">Our Completed Projects</h2>
+    <div class="projects-container">
+      
+      <div class="projects-group" data-aos="zoom-in">
+        <h3>🌱 Platify</h3>
+        <p>An AI-powered plant identifier that classifies species and provides details about their uses.</p>
+      </div>
+
+      <div class="projects-group" data-aos="zoom-in" data-aos-delay="200">
+        <h3>🧪 Pesticide Detection</h3>
+        <p>A machine learning model that detects harmful pesticide residues in crops.</p>
+      </div>
+
+      <div class="projects-group" data-aos="zoom-in" data-aos-delay="400">
+        <h3>🌿 Plant Disease Detection</h3>
+        <p>A deep learning system to identify plant diseases and recommend treatment solutions.</p>
+      </div>
+
+      <div class="projects-group" data-aos="zoom-in" data-aos-delay="600">
+        <h3>🐟 FishSnap</h3>
+        <p>A mobile app that uses AI to assess fish freshness from images in real-time.</p>
+      </div>
+
+    </div>
   </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 AI + Plant Biology | All rights reserved.</p>
+  </footer>
 </body>
 </html>
