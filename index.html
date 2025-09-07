@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Green Pastures - AI for Agriculture</title>
+  <title>Main - Green Pastures</title>
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Fonts -->
@@ -14,14 +14,14 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       AOS.init({
-        duration: 1200,
+        duration: 1000,
         once: true,
         offset: 100
       });
     });
   </script>
 
-  <!-- Custom Styling -->
+  <!-- Custom Font Styling -->
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@
     }
     header h1 {
       font-family: 'Poppins', sans-serif;
-      font-size: 24px;
+      font-size: 22px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -51,25 +51,19 @@
       text-decoration: none;
       color: #2e7d32;
       font-weight: 600;
-      transition: 0.3s;
       font-family: 'Poppins', sans-serif;
-    }
-    nav a:hover {
-      color: #1b5e20;
     }
     nav a.active {
       color: #1b5e20;
       border-bottom: 2px solid #1b5e20;
     }
-
-    /* Hero */
     .hero {
       background: linear-gradient(to right, #e8f5e9, #f1f8e9);
-      padding: 100px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
     .hero h2 {
-      font-size: 40px;
+      font-size: 34px;
       font-family: 'Poppins', sans-serif;
       color: #1b5e20;
     }
@@ -86,51 +80,23 @@
       display: inline-block;
       background: #2e7d32;
       color: white;
-      padding: 12px 25px;
-      margin-top: 20px;
-      margin-right: 10px;
+      padding: 10px 20px;
+      margin-top: 15px;
+      margin-right: 8px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s, transform 0.2s;
+      border-radius: 6px;
+      transition: background 0.3s;
       font-family: 'Poppins', sans-serif;
     }
     .btn:hover {
       background: #1b5e20;
-      transform: scale(1.05);
     }
-
-    /* Highlights Section */
-    .highlights {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      font-family: 'Poppins', sans-serif;
-      color: #2e7d32;
-    }
-
-    /* Footer */
     footer {
       text-align: center;
       padding: 15px;
       background: #e8f5e9;
       font-size: 14px;
-      margin-top: 40px;
+      margin-top: 30px;
       color: #2e7d32;
       border-top: 2px solid #c8e6c9;
     }
@@ -153,34 +119,19 @@
 
   <!-- Hero -->
   <section class="hero" data-aos="zoom-in">
-    <h2>Innovating Agriculture with <span>AI</span></h2>
+    <h2>Welcome to <span>Green Pastures</span></h2>
     <p>
-      Green Pastures is a mini IT company dedicated to transforming agriculture through Artificial Intelligence.  
-      We develop custom AI solutions for plant disease detection, soil analysis, crop management, and sustainable farming.  
+      Harnessing the synergy of <strong>Artificial Intelligence</strong> and <strong>Plant Sciences</strong>  
+      to address global challenges in <em>agriculture, food security, biodiversity conservation, 
+      and sustainable environmental management</em>.
     </p>
-    <a href="services.html" class="btn">Our Services</a>
-    <a href="completed.html" class="btn">View Projects</a>
-  </section>
-
-  <!-- Highlights -->
-  <section class="highlights" data-aos="fade-up">
-    <div class="card">
-      <h3>🌱 Plant Disease Detection</h3>
-      <p>AI-powered models that identify plant diseases from images with high accuracy.</p>
-    </div>
-    <div class="card">
-      <h3>🌍 Soil & Crop Monitoring</h3>
-      <p>Smart analysis tools for soil health, fertility, and sustainable farming practices.</p>
-    </div>
-    <div class="card">
-      <h3>🤖 AI App Development</h3>
-      <p>Custom-built AI solutions for clients – from mobile apps to full project development.</p>
-    </div>
+    <a href="features.html" class="btn">Features</a>
+    <a href="about.html" class="btn">Learn More</a>
   </section>
 
   <!-- Footer -->
   <footer data-aos="fade-up">
-    <p>&copy; 2025 Green Pastures | AI for Agriculture | All rights reserved.</p>
+    <p>&copy; 2025 Green Pastures | All rights reserved.</p>
   </footer>
 </body>
 </html>
