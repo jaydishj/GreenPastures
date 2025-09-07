@@ -4,9 +4,23 @@
   <meta charset="UTF-8">
   <title>Ongoing Projects</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    });
+  </script>
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header data-aos="fade-down">
     <h1>Ongoing Projects</h1>
     <nav>
       <a href="main.html">Home</a>
@@ -18,13 +32,33 @@
     </nav>
   </header>
 
+  <!-- Projects Section -->
   <section id="projects">
-    <h2>Ongoing Projects</h2>
-    <ul>
-      <li>🤖 AI Chatbot (AgriAssist)</li>
-      <li>🧬 AI-driven CRISPR Gene Editing</li>
-      <li>🔬 Microorganism Identifier</li>
-    </ul>
+    <h2 data-aos="fade-up">Our Ongoing Projects</h2>
+    <div class="projects-container">
+      <div class="card" data-aos="zoom-in">
+        <h3>🤖 AI Chatbot (AgriAssist)</h3>
+        <p>A multilingual chatbot that answers farmer queries using AI + NLP.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>🧬 AI-driven CRISPR Gene Editing</h3>
+        <p>Leveraging AI to optimize precision in CRISPR-based plant gene editing.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>🔬 Microorganism Identifier</h3>
+        <p>Image-based identification of beneficial and harmful microorganisms.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 AI + Plant Biology | All rights reserved.</p>
+  </footer>
 </body>
 </html>
