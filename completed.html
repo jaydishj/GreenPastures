@@ -4,9 +4,23 @@
   <meta charset="UTF-8">
   <title>Completed Projects</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    });
+  </script>
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header data-aos="fade-down">
     <h1>Completed Projects</h1>
     <nav>
       <a href="main.html">Home</a>
@@ -18,14 +32,39 @@
     </nav>
   </header>
 
+  <!-- Projects Section -->
   <section id="projects">
-    <h2>Completed Projects</h2>
-    <ul>
-      <li>🌱 Platify</li>
-      <li>🧪 Pesticide Detection</li>
-      <li>🌿 Plant Disease Detection</li>
-      <li>🐟 FishSnap</li>
-    </ul>
+    <h2 data-aos="fade-up">Our Completed Projects</h2>
+    <div class="projects-container">
+      <div class="card" data-aos="flip-left">
+        <h3>🌱 Platify</h3>
+        <p>An AI system for identifying South Indian medicinal herbs.</p>
+        <a href="#" class="btn">View</a>
+      </div>
+
+      <div class="card" data-aos="flip-right">
+        <h3>🧪 Pesticide Detection</h3>
+        <p>AI-powered detection of pesticide levels for food safety.</p>
+        <a href="#" class="btn">View</a>
+      </div>
+
+      <div class="card" data-aos="flip-left">
+        <h3>🌿 Plant Disease Detection</h3>
+        <p>Deep learning models for identifying crop leaf diseases.</p>
+        <a href="#" class="btn">View</a>
+      </div>
+
+      <div class="card" data-aos="flip-right">
+        <h3>🐟 FishSnap</h3>
+        <p>AI-based freshness detection system for fish quality.</p>
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 AI + Plant Biology | All rights reserved.</p>
+  </footer>
 </body>
 </html>
