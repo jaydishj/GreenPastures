@@ -5,28 +5,105 @@
   <title>Our Services - Green Pastures</title>
   <link rel="stylesheet" href="style.css">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
   <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       AOS.init({
-        duration: 1000,
+        duration: 1200,
         once: true,
         offset: 100
       });
     });
   </script>
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fbe7;
+      color: #333;
+    }
+    header {
+      background: #e8f5e9;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #c8e6c9;
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #2e7d32;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #2e7d32;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav a.active {
+      color: #1b5e20;
+      border-bottom: 2px solid #1b5e20;
+    }
+    .services {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .services h2 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      color: #1b5e20;
+      margin-bottom: 40px;
+    }
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e8f5e9;
+      font-size: 14px;
+      margin-top: 40px;
+      color: #2e7d32;
+      border-top: 2px solid #c8e6c9;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
   <header data-aos="fade-down">
-    <h1><img src="logo.png" alt="Logo" height="50"> Green Pastures</h1>
+    <h1><img src="logo.png" alt="Logo" height="45"> Green Pastures</h1>
     <nav>
-      <a href="main.html">Home</a>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Our Services</a>
       <a href="completed.html">Completed Projects</a>
       <a href="ongoing.html">Ongoing Projects</a>
-      <a href="services.html" class="active">Our Services</a>
       <a href="about.html">About</a>
       <a href="features.html">Features</a>
       <a href="contact.html">Contact</a>
@@ -34,44 +111,34 @@
   </header>
 
   <!-- Services Section -->
-  <section id="services" data-aos="fade-up">
-    <h2>💼 Our Professional Services</h2>
-    <p>
-      At <b>Green Pastures</b>, we function like a <em> AI solutions for Biosciences</em>, 
-      offering innovative and research-driven services to clients in academics, industry, and startups.
-    </p>
+  <section class="services" data-aos="fade-up">
+    <h2>Our Services</h2>
 
-    <div class="service-cards">
-      <div class="card" data-aos="zoom-in">
-        <h3>📱 Custom AI App Development</h3>
-        <p>We design and build AI-powered mobile and web applications tailored to client needs, from agriculture to healthcare.</p>
-      </div>
-
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>🤖 Research & Project Assistance</h3>
-        <p>Support for academic research, mini-projects, dissertations, and prototype building with AI integration.</p>
-      </div>
-
-      <div class="card" data-aos="zoom-in" data-aos-delay="400">
-        <h3>🧑‍💻 AI Consultation</h3>
-        <p>Expert consultation on AI strategy, data science workflows, and digital transformation for institutions and organizations.</p>
-      </div>
-
-      <div class="card" data-aos="zoom-in" data-aos-delay="600">
-        <h3>🌐 Web Development</h3>
-        <p>Professional websites, portfolios, and dashboards with modern design, animations, and database integration.</p>
-      </div>
-
-      <div class="card" data-aos="zoom-in" data-aos-delay="800">
-        <h3>📊 Data Analysis & Visualization</h3>
-        <p>End-to-end data services including cleaning, modeling, and building interactive dashboards.</p>
-      </div>
+    <div class="service-card" data-aos="fade-right">
+      <h3>🤖 AI App Development</h3>
+      <p>We build custom AI-powered applications tailored to client needs, from mobile apps to enterprise solutions.</p>
     </div>
+
+    <div class="service-card" data-aos="fade-left">
+      <h3>🌱 Agriculture AI Solutions</h3>
+      <p>Plant disease detection, soil analysis, and precision farming using computer vision and deep learning models.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-right">
+      <h3>📊 Data Science Projects</h3>
+      <p>Data cleaning, visualization, and predictive analytics for agriculture, environment, and life sciences.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-left">
+      <h3>💻 Client Project Development</h3>
+      <p>End-to-end project development for students, startups, and businesses in AI, ML, and plant sciences.</p>
+    </div>
+
   </section>
 
   <!-- Footer -->
   <footer data-aos="fade-up">
-    <p>&copy; 2025 Green Pastures | All rights reserved.</p>
+    <p>&copy; 2025 Green Pastures | AI for Agriculture | All rights reserved.</p>
   </footer>
 </body>
 </html>
